@@ -1,0 +1,9 @@
+load_file("nrngui.hoc")
+load_file("propagation.hoc")
+xpanel("passive_propagation")
+xradiobutton("passive_prpagation (Fig. 4H)", "restart() load_file(1, \"passive_propagation.hoc\")")
+xradiobutton("long_(-)pulse (Fig. 4G left)", "restart() load_file(1, \"long_(-)pulse.hoc\")")
+xradiobutton("short_pulse (Fig. 4G right/black)", "restart() load_file(1, \"short_pulse.hoc\")")
+xradiobutton("passive_short_pulse (Fig. 4G right/red)", "restart() load_file(1, \"passive_short_pulse.hoc\")")
+xpanel(20, 130)
+proc restart() {graphList.remove_all()}
